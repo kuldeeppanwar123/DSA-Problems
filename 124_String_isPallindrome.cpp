@@ -7,6 +7,8 @@ int isPalindrome(string S)
 	}
 
 
+
+
 int isPalindrome(string S)
 	{
 	   int s = 0;
@@ -18,3 +20,15 @@ int isPalindrome(string S)
 	   }
 	   return 1;
 	}
+
+
+
+int isPalindrome(string S,int s, int e ){
+	    if(s>e)return 1;
+	    if(S[s]!=S[e])return 0;
+	    
+	    return isPalindrome(S , s+1, e-1);
+	}
+    int isPalindrome(string s){
+        return isPalindrome(s , 0 ,s.size()-1);
+    }
