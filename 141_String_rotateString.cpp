@@ -1,3 +1,5 @@
+//abced --> cedab
+
 bool rotateString(string s, string goal) {
         if(s.size()!=goal.length())
           return false;
