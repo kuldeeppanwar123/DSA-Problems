@@ -1,7 +1,8 @@
 class Solution
 { set<string>Set;
 	public:
-	    void permutation(string s , int idx){
+	    void permutation(string s , int idx) 
+	    {
 	        if(idx==s.length()-1){
 	            Set.insert(s);
 	            return;
