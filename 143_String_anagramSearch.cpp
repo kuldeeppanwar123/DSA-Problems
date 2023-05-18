@@ -21,7 +21,27 @@ int search(string pat, string txt) {
     }
 
 
-// intuition -2 (Optimal solution)
+// intuition-2 (optimal)
+ vector<int> findAnagrams(string s, string p) {
+        vector<int>ans;
+        int m = s.size();
+        int n = p.size();
+
+        if(n>m)return ans;
+        sort(p.begin(), p.end());
+        for(int i=0; i<=m-n; ++i){
+            string temp = s.substr(i , n);
+            sort(temp.begin(), temp.end());
+            if(temp==p)
+            ans.push_back(i);
+        }
+        return ans;
+    }
+
+
+
+
+// intuition -3 (most Optimal solution)
 bool isMatch(int patcount[] , int txtcount[]){
         for(int i=0; i<26; i++){
             if(patcount[i]!=txtcount[i])
