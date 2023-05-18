@@ -12,8 +12,9 @@ vector<int> findAnagrams(string s, string p) {
             scount[s[i]-'a']++;
             pcount[p[i]-'a']++;
         }
-
-        int i=n;
+        
+        
+           int i=n;
         for(; i<m; i++){
             if(pcount==scount){
                 ans.push_back(i-n);
