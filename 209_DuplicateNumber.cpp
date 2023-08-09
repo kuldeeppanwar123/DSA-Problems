@@ -32,7 +32,12 @@ int findDuplicate(vector<int>& nums) {
         return ans;
     }
 
+
 // approach 3
+using sorting(N*logN)
+
+        
+// approach 4
 int findDuplicate(vector<int>& nums) {
         int slow = 0; 
         int fast = 0;
